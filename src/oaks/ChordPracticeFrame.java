@@ -70,7 +70,7 @@ public class ChordPracticeFrame extends JFrame {
 	public String gen(){
 		System.out.println(major + ", " + minor + ", "  + maj7  + ", " + dom7  + ", " + m7  + ", " + m7b5  + ", " + sixchord  + ", " + dim7);
 		double x = java.lang.Math.random()*7;
-		double y = java.lang.Math.random()*7;
+		double y = java.lang.Math.random()*8;
 		int intx= (int) x;
 		int inty=(int) y;
 		String S = NOTESET.substring(intx,intx+1);
@@ -109,8 +109,6 @@ public class ChordPracticeFrame extends JFrame {
 			}
 				break;
 			case 4: {
-				System.out.println("testing dim7");
-				System.out.println(dim7);
 				if(dim7) S = S +"dim7";
 				else return gen();
 			}
